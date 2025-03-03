@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Echo Test";
+}
+
+<h1>Echo Test</h1>
+
+<h2>Send a GET request</h2>
+<a href="/Echo">GET /Echo</a>
+
+<h2>Send a POST request</h2>
+<form method="post" action="/Echo">
+    <button type="submit">POST /Echo</button>
+</form>
+
+<h2>Get Headers</h2>
+<a href="/Echo/headers">GET /Echo/headers</a>
+
+<h2>Get Query Parameters</h2>
+<a href="/Echo/query?param1=value1&param2=value2">GET /Echo/query</a>
+
+<h2>Send Body Content</h2>
+<form method="post" action="/Echo/body">
+    <textarea name="bodyContent" rows="4" cols="50" placeholder="Enter text to send as body..."></textarea><br />
+    <button type="submit">POST /Echo/body</button>
+</form>
